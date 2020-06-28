@@ -1,12 +1,14 @@
 package instruments;
 
+import instruments.Instrument;
 import behaviours.IPlay;
 
-public class Trumpet implements IPlay {
+public class Trumpet extends Instrument implements IPlay {
 
     private int numberOfValves;
 
-    public Trumpet(int numberOfValves) {
+    public Trumpet(String colour, String material, String type, int numberOfValves) {
+        super(colour, material, type);
         this.numberOfValves = numberOfValves;
     }
 
